@@ -7,11 +7,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /*header*/
+.fa-search{
+    position: absolute;
+    margin: 12px 0px 15px 480px;
+    color: #b5b5b5;
+    cursor: pointer;
+}
 .container_head{
     display: flex;
     font-size: 20px;
-    background-color: #dadaff;
-    padding: 10px 20px;
+    padding: 10px 0px;
 }
 .container_head > div{
     margin-right: 40px;
@@ -23,6 +28,8 @@
     margin-top: 8px;
     margin-right: 50px;
     text-decoration: none;
+    
+    width: 80px;
 }
 .head_flex2{
     display: flex;
@@ -36,8 +43,16 @@
     width: 500px;
     height: 40px;
     padding-left: 15px;
-    border: none;
+    border: 1px solid #dbf4ff;
     border-radius: 20px;
+    outline: none;
+}
+.class_input > input:hover{
+    border: 1px solid #7fd9ff;
+    transition: 0.5s;
+}
+input[type=text]:focus {
+  border: 1px solid #7fd9ff;
 }
 /*main*/
 .banner > img{
@@ -56,6 +71,12 @@
 }
 .main_flex > div{
     padding-top: 10px;
+    cursor: pointer;
+}
+.main_flex1 > div:hover{
+    background-color: #242368;
+    color: #ffffff;
+    transition: 0.5s;
 }
 .main_flex1{
     display: flex;
@@ -71,7 +92,126 @@
 }
 .main_flex2 > div{
     margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+.main_flex2 > div:hover{
+    background-color: #242368;
+    color: #ffffff;
+    transition: 0.5s;
 }
 .main_banner{
     margin-right: 20px;
+}
+/*MAIN_2*/
+#giamgiasoc{
+    margin-bottom: 20px;
+}
+.main_flex3_div{
+    margin-top: 50px;
+}
+.main_flex3_laptop{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_flex3_laptop > div{
+    cursor: pointer;
+    padding: 10px;
+    height: 500px;
+    width: 240px;
+    border: 1px solid #b5b5b5;
+    font-size: 18px;
+}
+.main_flex3_laptop > div > img{
+    width: 240px;
+    text-align: center;
+}
+.main_flex3_laptop > div > div{
+    margin-top: 5px;
+}
+#cost1{
+    color:red;
+    font-weight: bold;
+}
+#cost2{
+    text-decoration: line-through;
+}
+.fa-gift{
+    color: red;
+}
+#xemtatca{
+    border: 1px solid #b5b5b5;
+    text-align: center;
+    width: 150px;
+    padding: 15px;
+    margin: 20px auto;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+}
+#xemtatca:hover{
+    background-color: #09bbd0;
+    color: #ffffff;
+    border: 1px solid #09bbd0;
+    transition: 0.5s;
+}
+.maytinhsachtay{
+    margin-top: 10px;
+}
+.main_flex4{
+    display: flex;
+}
+.main_flex4 > div{
+    margin: 10px;
+}
+.main_flex4 > div > img{
+    width: 120px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main_flex4 > div > img:hover{
+    border: 1px solid #09bbd0;
+}
+#thuonghieu{
+    margin-top: 40px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.main_flex5{
+    display: flex;
+    margin-top: 40px;
+}
+.main_flex5 > div{
+    margin: 10px;
+    background-color: #f0f0f0;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.main_flex5 > div:hover{
+    background-color: #09bbd0;
+    color: #ffffff;
+}
+#khoanggia{
+    text-align: left;
+    background-color: #ffffff;
+    width: 130px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.main_flex3_laptop > div > div > span{
+    color: red;
+    font-weight: bold;
+}
+#hangdangve{
+    margin-bottom: 20px;
+}
+/*MAIN 6*/
+#phukien{
+    margin-bottom: 20px;
 }
