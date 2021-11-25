@@ -11,36 +11,36 @@ a{
 a:hover{
     color: #06c1d4;
 }
-/* login 1 */
-.login{
+/* signup 1 */
+.signup{
     width: 440px;
-    height: 550px;
+    height: 650px;
     margin: auto;
     margin-top: 100px;
     background-color: #fff;
     border-radius: 10px;
 }
-.login1{
+.signup1{
     height: 65px;
     display: flex;
     font-size: 20px;
     
 }
-.login1_1{
+.signup1_1{
+  line-height: 65px ;
+  width: 220px;
+  text-align: center;
+  border-bottom:#c6c7c9 2px solid;
+  
+}
+.signup1_2{
   line-height: 65px ;
   width: 220px;
   text-align: center;
   border-bottom: #06c1d4 2px solid;
-  
 }
-.login1_2{
-  line-height: 65px ;
-  width: 220px;
-  text-align: center;
-  border-bottom: #c6c7c9 2px solid;
-}
-/* login 2 */
-.login2{
+/* signup 2 */
+.signup2{
     margin: 30px;
     font-size: 17px;
 }
@@ -53,7 +53,7 @@ a:hover{
    padding-left: 10px;
    border-radius: 5px;
 }
-#password{
+#password1{
     height: 45px;
     width: 375px;
     background-color: #f8f8f8;
@@ -61,6 +61,15 @@ a:hover{
     font-size: 15px;
    border-radius: 5px;
    padding-left: 10px;  
+}
+#password2{
+    height: 45px;
+    width: 375px;
+    background-color: #f8f8f8;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding-left: 10px;  
 }
 #showpass{
     border: none;
@@ -70,7 +79,7 @@ a:hover{
 #showpass:hover{
     cursor: pointer;
 }
-#btn-login{
+#btn-signup{
     height: 45px;
     width: 375px;
     background-color: #06c1d4;
@@ -81,12 +90,12 @@ a:hover{
     font-weight: bold;
     margin-top: 20px;
 }
-#btn-login:hover{
+#btn-signup:hover{
     cursor: pointer;
     opacity: 70%;
 }
-/* login 3 */
-.login3{
+/* signup 3 */
+.signup3{
     justify-content: center;
     justify-content: space-around;
     align-items: center;
@@ -101,14 +110,14 @@ a:hover{
     width: 70px;
     background-color: #d6d3d3;
 }
-.login4{
+.signup4{
     font-size: 20px;
 }
-.login4_1{
+.signup4_1{
     display: flex;
     justify-content: center;
 }
-.login4_2{
+.signup4_2{
     display:flex;
     justify-content: space-around;
     
