@@ -71,12 +71,20 @@ a:hover{
     border-radius: 5px;
     padding-left: 10px;  
 }
-#showpass{
+#showpass1{
     border: none;
     transform: translate(355px, -35px);
     background-color: #f8f8f8;
 }
-#showpass:hover{
+#showpass2{
+    border: none;
+    transform: translate(355px, -35px);
+    background-color: #f8f8f8;
+}
+#showpass1:hover{
+    cursor: pointer;
+}
+#showpass2:hover{
     cursor: pointer;
 }
 #btn-signup{
