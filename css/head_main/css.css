@@ -16,7 +16,6 @@
 .container_head{
     display: flex;
     font-size: 20px;
-    background-color: #ccf0ff;
     border-radius: 5px;
     padding: 10px 5px;
 }
@@ -265,4 +264,9 @@ input[type=text]:focus {
 /*MAIN 6*/
 #phukien{
     margin-bottom: 20px;
+}
+/*FOOTER*/
+.footer{
+    background-color: #ffffff;
+    padding-bottom: 10px;
 }
