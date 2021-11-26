@@ -98,21 +98,6 @@ input[type=text]:focus {
 .dropdown:hover .dropdown_box{
     display: block;
 }
-/*BOX-2*/
-.dropdown1{
-    position: relative;
-    margin-top: 10px;
-}
-.dropdown1 > a{
-    margin-right: 40px;
-}
-.dropdown1 > a:hover{
-    text-decoration: underline;
-    text-underline-offset: 0.56em;
-}
-.dropdown1:hover .dropdown_box{
-    display: block;
-}
 #muc{
     margin-bottom: 10px;
     padding-top: 20px;
