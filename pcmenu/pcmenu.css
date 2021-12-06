@@ -54,13 +54,15 @@ img{
 .body_lower{
     margin-top: 20px;
 }
+.body_lower--left,
+.body_lower--right{
+    float: left;
+}
 .body_lower--left{
    width: 250px;
-   position: fixed;
 }
 .body_lower--right{
     width: 1000px;
-    margin-left: 250px;
 }
 .boloc{
     height: 50px;
