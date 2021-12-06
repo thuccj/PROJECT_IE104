@@ -53,13 +53,14 @@ img{
 }
 .body_lower{
     margin-top: 20px;
-}
-.body_lower--left,
-.body_lower--right{
-    float: left;
+    display: flex;
 }
 .body_lower--left{
    width: 250px;
+   margin-top: 0px;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
 }
 .body_lower--right{
     width: 1000px;
@@ -91,6 +92,9 @@ img{
     padding: 10px;
     border-collapse: inherit;
     border: 1px solid #d8d6d6;
+}
+.grid_items:hover{
+    box-shadow: 0px 0px 10px 2px rgb(107, 106, 106);
 }
 
 
