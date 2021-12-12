@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*SCROLL BAR*/
+body{
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #005376;
+}
+body::-webkit-scrollbar {
+    width: 13px;
+}
+    body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+/*SCROLL BAR*/
+.container{
+    padding: 0% 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+.fa-search{
+    position: absolute;
+    margin: 12px 0px 15px 480px;
+    color: #b5b5b5;
+    cursor: pointer;
+}
+.fa-search:hover{
+    cursor: pointer;
+}
+.container_head{
+    display: flex;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+.container_head > div{
+    margin-right: 40px;
+}
+.head_flex1{
+    display: flex;
+    margin-top: 15px;
+}
+.head_flex2{
+    display: flex;
+}
+.head_flex2 > a{
+    margin-top: 8px;
+    margin-right: 50px;
+}
+.class_input > input{
+    font-size: 15px;
+    width: 500px;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #dbf4ff;
+    border-radius: 20px;
+    outline: none;
+}
+.class_input > input:hover{
+    border: 1px solid #7fd9ff;
+    transition: 0.5s;
+}
+input[type=text]:focus {
+  border: 1px solid #7fd9ff;
+}
+/*BOX-1*/
+.downdown{
+    position: relative;
+    margin-top: 10px;
+}
+.dropdown > a{
+    margin-right: 40px;
+    text-decoration: none;
+}
+.dropdown > a:link{
+    color: #242368;
+}
+.dropdown > a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.56em;
+}
+.dropdown_box{
+    display: none;
+    position: absolute;
+    width: 970px;
+    height: 765px;
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid #dfdfdf;
+    border-radius: 0px 50px 50px 50px;
+}
+.dropdown_box_flex1{
+    display: flex;
+}
+.dropdown_box_flex1 > div{
+    margin-right: 50px;
+}
+.dropdown_box_flex2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+.dropdown_box_flex2 > div{
+    border: 1px solid #ececec;
+    width: 150px;
+    height:260px;
+    padding: 7px;
+}
+.dropdown_box_flex2 > div > div{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.dropdown_box_flex2 > div > div:hover{
+    color: #09bbd0;
+    font-weight: bold;
+}
+.dropdown:hover .dropdown_box{
+    display: block;
+}
+#muc{
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+#tuvan{
+    width: 300px;
+    padding-top: 30px;
+}
+#sdt{
+    color: #09bbd0;
+    font-weight: bold;
+}
+#icon_top i:hover{
+    color: #09bbd0;
+    font-weight: bold;
+}

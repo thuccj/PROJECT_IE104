@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/head_main/css.css">
-    <link rel="stylesheet" type="text/css" href="css/footer/footer.css">
-    <script rel="stylesheet" type="text/javascript" src="js/js.js"></script>
-    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/head_main/css.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer/footer.css">
+    <script rel="stylesheet" type="text/javascript" src="assets/js/js_main.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(document).ready(function(){
+    $("#location").click(function(){
+        $("#map").slideToggle("slow");
+    });
+    });
+</script>
     <title>Document</title>
 </head>
-<body>
+<body onload="changebg()">
 <!--HEADER-->
     <div class="container">
         <div class="container_head">
-            <div id="image"><a href=""><img src="images/logo/logostech.png"></a></div>
+            <div id="image"><a href=""><img src="assets/images/logo/logostech.png"></a></div>
             <div class="head_flex1">
                 <!--LAPTOP-->
                 <div class="dropdown">
-                    <a href="">Laptop</a>
+                    <a href="assets/files/laptopmenu/laptopmenu.html">Laptop</a>
                     <!--BOX-->
                     <div class="dropdown_box">
                         <div class="dropdown_box_flex1">
@@ -109,8 +117,8 @@
                     </div>
                 </div>
                 <!--PC-->
-                <div class="dropdown1">
-                    <a href="">PC</a>
+                <div class="dropdown">
+                    <a href="assets/files/pcmenu/pcmenu.html">PC</a>
                     <!--BOX-->
                     <div class="dropdown_box">
                         <div class="dropdown_box_flex1">
@@ -155,7 +163,7 @@
                 </div>
                 <!--PHU KIEN-->
                 <div class="dropdown">
-                    <a href="">Phụ kiện</a>
+                    <a href="assets/files/phukienmenu/phukienmenu.html">Phụ kiện</a>
                     <!--BOX-->
                     <div class="dropdown_box">
                         <div class="dropdown_box_flex1">
@@ -187,13 +195,21 @@
                 <!--PHUKIEN-->
             </div>
             <div class="class_input">
-                <i class="fas fa-search"></i>
+                <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                <lord-icon
+                    id="logocon"
+                    src="https://cdn.lordicon.com/msoeawqm.json"
+                    trigger="click"
+                    colors="primary:#848484,secondary:#08a88a"
+                    stroke="160"
+                    style="width:40px;height:40px">
+                </lord-icon>
                 <input type="text" placeholder="Tìm kiếm trên Thinkpro">
             </div>
             <div class="head_flex2">
-                <a href=""><i class="far fa-bell"></i></a>
-                <a href=""><i class="fas fa-shopping-bag"></i></a>
-                <a href=""><i class="far fa-user-circle"></i></a>
+                <a href="assets/files/thongbao/thongbao.html" id="icon_top"><i class="far fa-bell"></i></a>
+                <a href="assets/files/giohang/giohang.html" id="icon_top"><i class="fas fa-shopping-bag"></i></a>
+                <a href="assets/files/signin/sigin.html" id="icon_top"><i class="far fa-user-circle"></i></a>
             </div>
         </div>
 <!--MAIN-->
@@ -201,9 +217,9 @@
         <!--MAIN_1-->
             <div class="main_flex">
                 <div class=main_banner>
-                    <div class="banner"><img src="images/banner/bannergif.gif"></div>
+                    <div class="banner"></div>
                     <div class="main_flex1">
-                        <div id="radius1">THỦ ĐÔ ƠI - THINKPRO ĐÃ TỚI | 53 THÁI HÀ</div>
+                        <div id="radius1"><span id="line"></span>THỦ ĐÔ ƠI - THINKPRO ĐÃ TỚI | 53 THÁI HÀ</div>
                         <div>HP OMEN 16 2021: LIFT YOUR PLAY UP. WAY UP</div>
                         <div>PRE - ORDER GHẾ ERGOCHAIR PRE | BÀN DESK SMART PRO</div>
                         <div id="radius2">Chào Windows mới, Chạm Tới Khuyến Mãi</div>
@@ -221,7 +237,7 @@
                 <div><h1 id="giamgiasoc">Giảm giá sốc</h1></div>
                 <div class="main_flex3_laptop">
                     <div>
-                        <img src="images/laptop/ban phim co.jpg" alt="">
+                        <img src="assets/images/laptop/ban phim co.jpg" alt="">
                         <div><h3>Bàn Phím Cơ Newmen GM680</h3></div>
                         <div>SKU: NMGM68003CF</div>
                         <div id="cost1">1.530.000 đ</div>
@@ -229,20 +245,20 @@
                         <div><i class="fas fa-gift"></i> Giảm giá</div>
                     </div>
                     <div>
-                        <img src="images/laptop/acer nitro.jpg" alt="">
+                        <img src="assets/images/laptop/acer nitro.jpg" alt="">
                         <div><h3>ASUS TUF Dash F15</h3></div>
                         <div>SKU: TUFDashF1502CF</div>
                         <div id="cost1">32.990.000 đ</div>
                     </div>
                     <div>
-                        <img src="images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
+                        <img src="assets/images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
                         <div><h3>Dell XPS 15 9510</h3></div>
                         <div>SKU: XPS951005NS</div>
                         <div id="cost1">67.990.000 đ</div>
                         <div><i class="fas fa-gift"></i> Quà tặng kèm</div>
                     </div>
                     <div>
-                        <img src="images/laptop/msi bluestone.jpg" alt="">
+                        <img src="assets/images/laptop/msi bluestone.jpg" alt="">
                         <div><h3>MSI Modern 15 A11</h3></div>
                         <div>SKU: M015A1104CF</div>
                         <div id="cost1">18.990.000 đ</div>
@@ -250,7 +266,7 @@
                         <div><i class="fas fa-gift"></i> Giảm giá</div>
                     </div>
                     <div>
-                        <img src="images/laptop/ideapad-5-pro-16ach6-ct1-thinkpro.jpg" alt="">
+                        <img src="assets/images/laptop/ideapad-5-pro-16ach6-ct1-thinkpro.jpg" alt="">
                         <div><h3>Lenovo Ideapad 1 (Chính hãng)</h3></div>
                         <div>SKU: IdeaPad101CF</div>
                         <div id="cost1">9.490.000 đ</div>
@@ -266,14 +282,14 @@
                 <div>
                     <div class="main_flex4">
                         <p id="thuonghieu">Thương hiệu</p>
-                        <div><img src="images/icon/msi.png" alt=""></div>
-                        <div><img src="images/icon/acer.png" alt=""></div>
-                        <div><img src="images/icon/asus.png" alt=""></div>
-                        <div><img src="images/icon/razer.png" alt=""></div>
-                        <div><img src="images/icon/lenovo.png" alt=""></div>
-                        <div><img src="images/icon/dell.png" alt=""></div>
-                        <div><img src="images/icon/hp.png" alt=""></div>
-                        <div><img src="images/icon/apple.png" alt=""></div>
+                        <div><img src="assets/images/icon/msi.png" alt=""></div>
+                        <div><img src="assets/images/icon/acer.png" alt=""></div>
+                        <div><img src="assets/images/icon/asus.png" alt=""></div>
+                        <div><img src="assets/images/icon/razer.png" alt=""></div>
+                        <div><img src="assets/images/icon/lenovo.png" alt=""></div>
+                        <div><img src="assets/images/icon/dell.png" alt=""></div>
+                        <div><img src="assets/images/icon/hp.png" alt=""></div>
+                        <div><img src="assets/images/icon/apple.png" alt=""></div>
                     </div>
                 </div>
                 <div>
@@ -290,32 +306,32 @@
                 </div>
                 <div class="main_flex3_laptop">
                     <div>
-                        <img src="images/laptop/msi bluestone.jpg" alt="">
+                        <img src="assets/images/laptop/msi bluestone.jpg" alt="">
                         <div>MSI GF63 Thin (Chính hãng)</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">20.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/laptop/hp-14s-intel-gen-10.jpg" alt="">
+                        <img src="assets/images/laptop/hp-14s-intel-gen-10.jpg" alt="">
                         <div>HP 14s (Nhập khẩu)</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">15.490.000 đ</span></div>
                         <div><i class="fas fa-gift"></i> Quà tặng kèm</div>
                     </div>
                     <div>
-                        <img src="images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
+                        <img src="assets/images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
                         <div>Dell Inspiron 13 5310</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">26.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/laptop/ideapad-5-pro-16ach6-ct1-thinkpro.jpg" alt="">
+                        <img src="assets/images/laptop/ideapad-5-pro-16ach6-ct1-thinkpro.jpg" alt="">
                         <div>Lenovo IdeaPad 5 15</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">19.490.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
+                        <img src="assets/images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
                         <div>Dell Latitude 5410</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">17.990.000 đ</span></div>
@@ -323,32 +339,32 @@
                         <div><i class="fas fa-gift"></i> Giảm giá & Quà tặng kèm</div>
                     </div>
                     <div>
-                        <img src="images/laptop/hp-14s-intel-gen-10.jpg" alt="">
+                        <img src="assets/images/laptop/hp-14s-intel-gen-10.jpg" alt="">
                         <div>HP Victus Gaming 16 (Chính hãng)</div>
                         <div>2 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">22.990.000 đ</span></div>
                         <div><i class="fas fa-gift"></i> Quà tặng kèm</div>
                     </div>
                     <div>
-                        <img src="images/laptop/acer nitro.jpg" alt="">
+                        <img src="assets/images/laptop/acer nitro.jpg" alt="">
                         <div>Acer Nitro 5 2021 (Intel H45)</div>
                         <div>4 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">26.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/laptop/ideapad-5-pro-16ach6-ct1-thinkpro.jpg" alt="">
+                        <img src="assets/images/laptop/ideapad-5-pro-16ach6-ct1-thinkpro.jpg" alt="">
                         <div>Acer Aspire 3 15 Intel (Chính hãng)</div>
                         <div>2 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">11.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/laptop/gigag5-1.jpg" alt="">
+                        <img src="assets/images/laptop/gigag5-1.jpg" alt="">
                         <div>AVITA Liber V14 Intel</div>
                         <div>3 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">21.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/laptop/inspiron5515-mistblue-0.jpg" alt="">
+                        <img src="assets/images/laptop/inspiron5515-mistblue-0.jpg" alt="">
                         <div>Dell Vostro 14 3405 (Chính hãng)</div>
                         <div>2 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">15.990.000 đ</span></div>
@@ -363,32 +379,32 @@
                 <div id="hangdangve"><h1>Hàng đang về</h1></div>
                 <div class="main_flex3_laptop">
                     <div>
-                        <img src="images/hangsapve/s.jpg" alt="">
+                        <img src="assets/images/hangsapve/s.jpg" alt="">
                         <div>Kệ Màn hình Epione Monitor Stand</div>
                         <div>SKU: NMF22602CF</div>
                         <div id="cost1">180.000 đ</div>
                     </div>
                     <div>
-                        <img src="images/hangsapve/fc06dd7f231ef14ae1ce9f3a7cde406b.jpg" alt="">
+                        <img src="assets/images/hangsapve/fc06dd7f231ef14ae1ce9f3a7cde406b.jpg" alt="">
                         <div>Kệ Màn hình Epione Monitor Stand</div>
                         <div>SKU: NMF22601CF</div>
                         <div id="cost1">180.000 đ</div>
                     </div>
                     <div>
-                        <img src="images/hangsapve/epione-monitor-stand-5.jpg" alt="">
+                        <img src="assets/images/hangsapve/epione-monitor-stand-5.jpg" alt="">
                         <div>Kệ Màn hình Epione Monitor Stand</div>
                         <div>SKU: Inspiron551004NS</div>
                         <div id="cost1">21.990.000 đ</div>
                     </div>
                     <div>
-                        <img src="images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
+                        <img src="assets/images/laptop/dell-vostro-5415-chinh-hang-v4r55500u015w-thinkpro.jpg" alt="">
                         <div>Dell XPS 15 9510</div>
                         <div>SKU: XPS951005NS</div>
                         <div id="cost1">67.990.000 đ</div>
                         <div><i class="fas fa-gift"></i> Quà tặng kèm</div>
                     </div>
                     <div>
-                        <img src="images/hangsapve/asus-vivobook-m513-l1221t-oled-thinkpro-2.jpg" alt="">
+                        <img src="assets/images/hangsapve/asus-vivobook-m513-l1221t-oled-thinkpro-2.jpg" alt="">
                         <div>Samsung Galaxy Book Pro</div>
                         <div>SKU: GalaxyBookPro15601NS</div>
                         <div id="cost1">27.990.000 đ</div>
@@ -402,14 +418,14 @@
                 <div>
                     <div class="main_flex4">
                         <p id="thuonghieu">Thương hiệu</p>
-                        <div><img src="images/icon/msi.png" alt=""></div>
-                        <div><img src="images/icon/acer.png" alt=""></div>
-                        <div><img src="images/icon/asus.png" alt=""></div>
-                        <div><img src="images/icon/razer.png" alt=""></div>
-                        <div><img src="images/icon/lenovo.png" alt=""></div>
-                        <div><img src="images/icon/dell.png" alt=""></div>
-                        <div><img src="images/icon/hp.png" alt=""></div>
-                        <div><img src="images/icon/apple.png" alt=""></div>
+                        <div><img src="assets/images/icon/msi.png" alt=""></div>
+                        <div><img src="assets/images/icon/acer.png" alt=""></div>
+                        <div><img src="assets/images/icon/asus.png" alt=""></div>
+                        <div><img src="assets/images/icon/razer.png" alt=""></div>
+                        <div><img src="assets/images/icon/lenovo.png" alt=""></div>
+                        <div><img src="assets/images/icon/dell.png" alt=""></div>
+                        <div><img src="assets/images/icon/hp.png" alt=""></div>
+                        <div><img src="assets/images/icon/apple.png" alt=""></div>
                     </div>
                 </div>
                 <div>
@@ -426,32 +442,32 @@
                 </div>
                 <div class="main_flex3_laptop">
                     <div>
-                        <img src="images/mtdeban/imac24-21-silver-0jpg.png" alt="">
+                        <img src="assets/images/mtdeban/imac24-21-silver-0jpg.png" alt="">
                         <div>Imac 2421 silver</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">20.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/mtdeban/hp-elitedesk-800-g5-sffjpg.jpg" alt="">
+                        <img src="assets/images/mtdeban/hp-elitedesk-800-g5-sffjpg.jpg" alt="">
                         <div>HP 14s (Nhập khẩu)</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">15.490.000 đ</span></div>
                         <div><i class="fas fa-gift"></i> Quà tặng kèm</div>
                     </div>
                     <div>
-                        <img src="images/mtdeban/lenovo-thinkcentre-m725s-sffjpg.jpg" alt="">
+                        <img src="assets/images/mtdeban/lenovo-thinkcentre-m725s-sffjpg.jpg" alt="">
                         <div>Dell Inspiron 13 5310</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">26.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/mtdeban/lenovo-thinkcentre-m920s-sffjpg.jpg" alt="">
+                        <img src="assets/images/mtdeban/lenovo-thinkcentre-m920s-sffjpg.jpg" alt="">
                         <div>Lenovo IdeaPad 5 15</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">19.490.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/mtdeban/hp-elitedesk-800-g5-sffjpg.jpg" alt="">
+                        <img src="assets/images/mtdeban/hp-elitedesk-800-g5-sffjpg.jpg" alt="">
                         <div>Dell Latitude 5410</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">17.990.000 đ</span></div>
@@ -466,7 +482,7 @@
                 <div><h1 id="phukien">Phụ kiện - Gear</h1></div>
                 <div class="main_flex3_laptop">
                     <div>
-                        <img src="images/phukien/epione-monitor-stand-5jpg.jpg" alt="">
+                        <img src="assets/images/phukien/epione-monitor-stand-5jpg.jpg" alt="">
                         <div>Kệ Màn hình Epione Monitor Stand</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">290.000 đ</span></div>
@@ -474,26 +490,26 @@
                         <div><i class="fas fa-gift"></i> Giảm giá</div>
                     </div>
                     <div>
-                        <img src="images/phukien/resizerjpg.jpg" alt="">
+                        <img src="assets/images/phukien/resizerjpg.jpg" alt="">
                         <div>Lót chuột Razer Goliathus Chroma Extended</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">15.490.000 đ</span></div>
                         <div><i class="fas fa-gift"></i> Quà tặng kèm</div>
                     </div>
                     <div>
-                        <img src="images/phukien/11121-1jpg.jpg" alt="">
+                        <img src="assets/images/phukien/11121-1jpg.jpg" alt="">
                         <div>Ram Laptop Adata ĐR$ 3200 - Dung lượng 8GB</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">26.990.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/phukien/ssd-adata-su650-480gb-3dnand-25-sata-iii-read-wirte-upto-520-450mbs-asu650ss480gtr-1vxi0vjpg.jpg" alt="">
+                        <img src="assets/images/phukien/ssd-adata-su650-480gb-3dnand-25-sata-iii-read-wirte-upto-520-450mbs-asu650ss480gtr-1vxi0vjpg.jpg" alt="">
                         <div>SSD ADATA SU650 512GB</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">19.490.000 đ</span></div>
                     </div>
                     <div>
-                        <img src="images/phukien/lot-chuot-rog-thinkprojpg.png" alt="">
+                        <img src="assets/images/phukien/lot-chuot-rog-thinkprojpg.png" alt="">
                         <div>Lót chuột Aus TOG Sheath GUNDAM EDITION</div>
                         <div>1 cấu hình tùy chọn</div>
                         <div>Giá từ: <span id="cost1">17.990.000 đ</span></div>
@@ -502,9 +518,20 @@
                 <div id="xemtatca">Xem tất cả</div>
             </div>
         </div>
+        <div>
+            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+            <lord-icon
+                id="location"
+                src="https://cdn.lordicon.com/zzcjjxew.json"
+                trigger="click"
+                colors="primary:#121331,secondary:#08a88a"
+                style="width:50px;height:50px">
+            </lord-icon>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2312403776427!2d106.80086541528729!3d10.870008892258072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgVGjDtG5nIHRpbiDEkEhRRyBUUC5IQ00!5e0!3m2!1svi!2s!4v1639126437686!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
     <div class="footer">
-        <iframe src="files/footer/index.html" scrolling="no" width="1680px" height="550px" frameborder="0"></iframe>
+        <iframe src="assets/files/footer/index.html" scrolling="no" width="1694px" height="550px" frameborder="0"></iframe>
     </div>
 </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <script src="signup.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="signup">
+        <div id="logo"><a href="../../../index.html"><img src="../../images/logo/logostech.png"></a></div>
+        <div class="signup1">
+            <div class="signup1_1"><a href="../signin/sigin.html"><b>Đăng nhập</b></a></div>
+            <div class="signup1_2"><b>Tạo tài khoản</b></div>
+        </div>
+        <div class="signup2">
+        <b><p>Tên đăng nhập: </p></b>
+        <input type="text" name="" id="username" placeholder="Nhập tên đăng nhập">
+        <b><p>Mật khẩu: </p></b>
+        <input type="password" name="" id="password1" placeholder="Nhập mật khẩu"><button id="showpass1" onclick="showpass1()"><i class="fas fa-key"></i></button>
+        <b><p style="margin-top: 0;">Nhập lại mật khẩu: </p></b>
+        <input type="password" name="" id="password2" placeholder="Nhập mật khẩu"><button id="showpass2" onclick="showpass2()"><i class="fas fa-key"></i></button>
+        <input type="button" id="btn-signup" value="Đăng ký" onclick="signup()">
+        </div>
+        <div class="signup3">
+            <div class="gachngang"></div>
+            <p style="margin: 0;">Hoặc đăng ký thông qua</p>
+            <div class="gachngang"></div>
+        </div>
+        <div class="signup4">
+            <div class="signup4_1">
+                <div class="google"><a href="https://www.google.com/"><i class="fab fa-google"></i><b> google</b></a></div>
+            </div>
+            <div class="signup4_2">
+                <div class="apple"><a href="https://www.apple.com/"><i class="fab fa-apple"></i><b> apple</b></a></div>
+                <div class="facebook"><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i><b> facebook</b></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
