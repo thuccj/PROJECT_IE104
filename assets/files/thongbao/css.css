@@ -152,3 +152,14 @@ input[type=text]:focus {
     margin-top: 20px;
     margin-bottom: 100px;
 }
+/*FOOTER*/
+#footer{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    position:relative;
+}
+#footer iframe{
+    width:100%;
+    height:550px;
+}
