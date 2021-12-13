@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+p{
+    padding: 5px;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+a {
+    color: unset;
+    text-decoration: none;
+    display: inline-block;
+}
+.chinhsachbaohanh{
+    width: 1250px;
+    margin: auto;
+}
+.chinhsachbaohanh__logo{
+    display: flex;
+    align-items: center;
+}
+.chinhsachbaohanh__body{
+    margin-top: 40px;
+    display: flex;
+}
+.chinhsachbaohanh__body--left{
+    width: 200px;
+    margin-right: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.items{
+    width: 200px;
+}
+.chinhsachbaohanh__body--left .items{ 
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 1px solid #dddddd;
+}
+.chinhsachbaohanh__body--left a{
+    color: grey;
+    transition: 0.5s;
+}
+.chinhsachbaohanh__body--left a:hover{
+    color: black;
+}
+.chinhsachbaohanh__body--right{
+    max-width: 900px;
+}
+.table{
+    margin-top: 20px;
+}
+.table th{
+    border: 0.5px solid #dddddd;
+    margin: 0;
+    padding: 10px;
+    font-weight: inherit;
+}
+.noidung p{
+    margin: 20px 0;
+}

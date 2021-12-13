@@ -18,15 +18,15 @@ a {
     text-decoration: none;
     display: inline-block;
 }
-.chinhsachbaohanh{
+.tracuubaohanh{
     width: 1250px;
     margin: auto;
 }
-.chinhsachbaohanh__logo{
+.tracuubaohanh__logo{
     display: flex;
     align-items: center;
 }
-.chinhsachbaohanh__body{
+.tracuubaohanh__body{
     margin-top: 40px;
     display: flex;
 }
@@ -36,31 +36,34 @@ a {
     position: sticky;
     top: 0;
 }
-.chinhsachbaohanh__body--left .items{
+.tracuubaohanh__body--left{
+    width: 200px;
+}
+.tracuubaohanh__body--left .items{
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
     border-left: 1px solid #dddddd;
 }
-.chinhsachbaohanh__body--left a{
+.tracuubaohanh__body--left a{
     color: grey;
     transition: 0.5s;
 }
-.chinhsachbaohanh__body--left a:hover{
+.tracuubaohanh__body--left a:hover{
     color: black;
 }
-.chinhsachbaohanh__body--right .phieutracuu{
+.tracuubaohanh__body--right .phieutracuu{
     margin-top: 30px ;
     height: 340px;
     width: 810px;
     border: 1px solid #dddddd;
     padding: 20px;
 }
-.chinhsachbaohanh__body--right .phieutracuu a{
+.tracuubaohanh__body--right .phieutracuu a{
     color: #06c1d4;
     font-weight: bold;
 }
-.chinhsachbaohanh__body--right .phieutracuu p{
+.tracuubaohanh__body--right .phieutracuu p{
     margin-bottom: 5px;
 }
 .phieutracuu input{
