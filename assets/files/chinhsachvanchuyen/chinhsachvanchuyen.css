@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+p{
+    padding: 5px;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+a {
+    color: unset;
+    text-decoration: none;
+    display: inline-block;
+}
+.chinhsachbaohanh{
+    width: 1250px;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+.chinhsachbaohanh__logo{
+    display: flex;
+    align-items: center;
+}
+.chinhsachbaohanh__body{
+    margin-top: 40px;
+    display: flex;
+}
+.chinhsachbaohanh__body--left{
+    width: 200px;
+    margin-right: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.items{
+    width: 200px;
+}
+.chinhsachbaohanh__body--left .items{ 
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 1px solid #dddddd;
+}
+.chinhsachbaohanh__body--left a{
+    color: #b6b6b6;
+    transition: 0.5s;
+}
+.chinhsachbaohanh__body--left a:hover{
+    color: #06c1d4;
+    font-size: 15px;
+}

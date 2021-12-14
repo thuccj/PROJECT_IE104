@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+p{
+    padding: 5px;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+a {
+    color: unset;
+    text-decoration: none;
+    display: inline-block;
+}
+.tracuubaohanh{
+    width: 1250px;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+.tracuubaohanh__logo{
+    display: flex;
+    align-items: center;
+}
+.tracuubaohanh__body{
+    margin-top: 40px;
+    display: flex;
+}
+.container{
+    margin-right: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.tracuubaohanh__body--left{
+    width: 200px;
+}
+.tracuubaohanh__body--left .items{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-left: 1px solid #dddddd;
+}
+.tracuubaohanh__body--left a{
+    color: #b6b6b6;
+    transition: 0.5s;
+}
+.tracuubaohanh__body--left a:hover{
+    color: #06c1d4;
+    font-size: 15px;
+}
+.tracuubaohanh__body--right .phieutracuu{
+    margin-top: 30px ;
+    height: 340px;
+    width: 810px;
+    border: 1px solid #dddddd;
+    padding: 20px;
+}
+.tracuubaohanh__body--right .phieutracuu a{
+    color: #06c1d4;
+    font-weight: bold;
+}
+.tracuubaohanh__body--right .phieutracuu p{
+    margin-bottom: 5px;
+}
+.phieutracuu input{
+    height: 50px;
+    width: 400px;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    color: grey;
+    border: none;
+    background-color: #f3f5f8;
+    border-radius: 5px;
+}
+.phieutracuu button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    color: #fff;
+    background-color: #06c1d4;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.phieutracuu h4{
+    margin: 10px 0;
+}
