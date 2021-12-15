@@ -94,11 +94,11 @@ input[type=text]:focus {
     display: none;
     position: absolute;
     width: 970px;
-    height: 765px;
     margin-top: 10px;
     background-color: #f3f3f3;
     border: 1px solid #dfdfdf;
-    border-radius: 0px 50px 50px 50px;
+    border-radius: 5px;
+    z-index: 2;
 }
 .dropdown_box_flex1{
     display: flex;
@@ -109,12 +109,11 @@ input[type=text]:focus {
 .dropdown_box_flex2{
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
 }
 .dropdown_box_flex2 > div{
     border: 1px solid #ececec;
     width: 150px;
-    height:260px;
+    height:240px;
     padding: 7px;
 }
 .dropdown_box_flex2 > div > div{
@@ -204,6 +203,7 @@ img{
    position: -webkit-sticky;
    position: sticky;
    top: 0px;
+   z-index: 1;
 }
 .body_lower--right{
     width: 1000px;

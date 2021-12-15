@@ -92,11 +92,11 @@ input[type=text]:focus {
     display: none;
     position: absolute;
     width: 970px;
-    height: 765px;
     margin-top: 10px;
     background-color: #f3f3f3;
     border: 1px solid #dfdfdf;
-    border-radius: 0px 50px 50px 50px;
+    border-radius: 5px;
+    
 }
 .dropdown_box_flex1{
     display: flex;
@@ -107,12 +107,11 @@ input[type=text]:focus {
 .dropdown_box_flex2{
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
 }
 .dropdown_box_flex2 > div{
     border: 1px solid #ececec;
     width: 150px;
-    height:260px;
+    height: 230px;
     padding: 7px;
 }
 .dropdown_box_flex2 > div > div{
