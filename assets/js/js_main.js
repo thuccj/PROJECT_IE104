@@ -1,8 +1,7 @@
 var banners = [
-    "https://anh4.com/images/2021/12/10/MnEMoq.jpg",
-    "https://anh4.com/images/2021/12/10/MnEn5c.png",
+    "https://anh4.com/images/2021/12/19/MGBBj1.png",
+    "https://anh4.com/images/2021/12/19/MGBOTa.png",
     "https://anh4.com/images/2021/12/10/MnEkFY.jpg",
-    "https://anh4.com/images/2021/12/10/MnE22h.jpg",
     "https://anh4.com/images/2021/12/10/MnEEdZ.jpg"
 ]
 var index = 0;
