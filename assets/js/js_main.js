@@ -1,5 +1,4 @@
 var banners = [
-    "https://anh4.com/images/2021/12/19/MGBBj1.png",
     "https://anh4.com/images/2021/12/19/MGBOTa.png",
     "https://anh4.com/images/2021/12/10/MnEkFY.jpg",
     "https://anh4.com/images/2021/12/10/MnEEdZ.jpg"

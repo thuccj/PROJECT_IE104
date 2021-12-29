@@ -111,8 +111,9 @@ input[type=text]:focus {
 .dropdown_box_flex2 > div{
     border: 1px solid #ececec;
     width: 150px;
-    height: 230px;
+    height: 130px;
     padding: 7px;
+    font-size: 15px;
 }
 .dropdown_box_flex2 > div > div{
     margin-bottom: 5px;
@@ -204,7 +205,7 @@ input[type=text]:focus {
 .main_flex3_laptop > div{
     cursor: pointer;
     padding: 10px;
-    height: 500px;
+    height: 400px;
     width: 240px;
     border: 1px solid #b5b5b5;
     font-size: 18px;
